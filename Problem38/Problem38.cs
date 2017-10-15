@@ -9,7 +9,7 @@ namespace Problem38
     public interface ICar
     {
         void Start();
-        void Drive();
+        int Drive();
         void Stop();
     }
 
@@ -22,9 +22,9 @@ namespace Problem38
             Console.WriteLine("\n The car has started.");
         }
 
-        public void Drive()
+        public int Drive()
         {
-            fuel = fuel - 1;
+            return fuel = fuel - 1;
         }
         public void Stop()
         {
